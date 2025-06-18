@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AARUUSH - Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <span class="logo-text">AARUUSH-SRM</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="events.html" class="nav-link">EVENTS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="members.html" class="nav-link">MEMBERS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link active">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">CONTACT</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Photo Gallery</h1>
+            <p>Capturing Our Journey, Achievements, and Memorable Moments</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <!-- Gallery Filters -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="workshops">Workshops</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="projects">Projects</button>
+                <button class="filter-btn" data-filter="social">Social</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Workshop Photos -->
+                <div class="gallery-item" data-category="workshops">
+                    <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800" alt="AI Workshop">
+                    <div class="gallery-overlay">
+                        <h3>AI Workshop Session</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="workshops">
+                    <img src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Python Workshop">
+                    <div class="gallery-overlay">
+                        <h3>Python Programming Workshop</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="workshops">
+                    <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cybersecurity Workshop">
+                    <div class="gallery-overlay">
+                        <h3>Cybersecurity Training</h3>
+                    </div>
+                </div>
+
+                <!-- Event Photos -->
+                <div class="gallery-item" data-category="events">
+                    <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Hackathon">
+                    <div class="gallery-overlay">
+                        <h3>Annual Hackathon</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Tech Talk">
+                    <div class="gallery-overlay">
+                        <h3>Industry Tech Talk</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <img src="https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Conference">
+                    <div class="gallery-overlay">
+                        <h3>Tech Conference 2024</h3>
+                    </div>
+                </div>
+
+                <!-- Project Photos -->
+                <div class="gallery-item" data-category="projects">
+                    <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Project Demo">
+                    <div class="gallery-overlay">
+                        <h3>Project Showcase</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="projects">
+                    <img src="https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Team Project">
+                    <div class="gallery-overlay">
+                        <h3>Collaborative Project Work</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="projects">
+                    <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mobile App">
+                    <div class="gallery-overlay">
+                        <h3>Mobile App Development</h3>
+                    </div>
+                </div>
+
+                <!-- Social Photos -->
+                <div class="gallery-item" data-category="social">
+                    <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Team Building">
+                    <div class="gallery-overlay">
+                        <h3>Team Building Activity</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="social">
+                    <img src="https://images.pexels.com/photos/3184432/pexels-photo-3184432.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Social Event">
+                    <div class="gallery-overlay">
+                        <h3>End of Semester Celebration</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="social">
+                    <img src="https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Networking">
+                    <div class="gallery-overlay">
+                        <h3>Networking Mixer</h3>
+                    </div>
+                </div>
+
+                <!-- More Workshop Photos -->
+                <div class="gallery-item" data-category="workshops">
+                    <img src="https://images.pexels.com/photos/3184393/pexels-photo-3184393.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Web Dev Workshop">
+                    <div class="gallery-overlay">
+                        <h3>Web Development Bootcamp</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="workshops">
+                    <img src="https://images.pexels.com/photos/3184405/pexels-photo-3184405.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Database Workshop">
+                    <div class="gallery-overlay">
+                        <h3>Database Design Workshop</h3>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <img src="https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Awards Ceremony">
+                    <div class="gallery-overlay">
+                        <h3>Annual Awards Ceremony</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <span class="logo-text">AARUUSH</span>
+                    </div>
+                    <p>Empowering students through technology, innovation, and collaborative learning.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="members.html">Members</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> aaruush@srmist.edu.in</p>
+                        <p><i class="fas fa-phone"></i> +91 7998817223</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Building A, Room 201</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Made with ❤️ By NEERAJ</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
